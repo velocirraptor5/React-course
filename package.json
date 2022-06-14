@@ -1,14 +1,15 @@
 {
   "name": "app",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "devDependencies": {
     "eslint": "^8.8.0",
     "eslint-config-prettier": "^8.3.0",
+    "parcel": "^2.6.0",
     "prettier": "^2.7.0"
   },
   "scripts": {
+    "dev": "parcel src/index.html",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "format:check": "prettier --check \"src/**/*.{js,jsx}\"",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet"
@@ -23,5 +24,18 @@
   "bugs": {
     "url": "https://github.com/velocirraptor5/React-course/issues"
   },
-  "homepage": "https://github.com/velocirraptor5/React-course#readme"
+  "homepage": "https://github.com/velocirraptor5/React-course#readme",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "description": "",
+  "alias": {
+    "process": {
+        "global": "{}"
+    }
+  },
+  "browserslist":[
+    "last 2 versions"
+  ]
 }
