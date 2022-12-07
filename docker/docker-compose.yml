@@ -1,4 +1,4 @@
-version: '3.7'
+version: "3.7"
 
 services:
   # nestjs:
@@ -27,20 +27,21 @@ services:
   #   image: redis:5
   #   networks:
   #     - nestjs-network
-  react: 
-    container_name: react 
-    build: 
-      context: ../ 
+  react:
+    container_name: react
+    hostname: react
+    build:
+      context: ../
       dockerfile: ./docker/Dockerfile-front
-      target: development 
-    volumes: 
-      - ${APP_FRONT_DIRECTORY}:/usr/src/app 
-      - /usr/src/app/node_modules 
-    # ports: 
-    #   - ${FRONT_SERVER_PORT}:${FRONT_SERVER_PORT} 
+      target: development
+    volumes:
+      - ${APP_FRONT_DIRECTORY}:/usr/src/app
+      - /usr/src/app/node_modules
+    ports:
+      - ${FRONT_SERVER_PORT}:${FRONT_SERVER_PORT}
     # command: npm run dev
-    command: sleep infinity 
-    # env_file: 
+    command: sleep infinity
+    # env_file:
     #   - .env
   # postgres:
   #   container_name: postgres-nestjs

@@ -4,3 +4,4 @@ dist/
 .env
 .DS_store
 coverage/
+package-lock.json

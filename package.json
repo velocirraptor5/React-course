@@ -1,15 +1,14 @@
 {
   "name": "app",
   "version": "1.0.0",
-  "main": "index.js",
   "devDependencies": {
     "eslint": "^8.8.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react-hooks": "^4.3.0",
-    "parcel": "^2.6.0",
-    "prettier": "^2.7.0"
+    "parcel": "^2.8.0",
+    "prettier": "^2.5.1"
   },
   "scripts": {
     "dev": "parcel src/index.html",
@@ -30,7 +29,8 @@
   "homepage": "https://github.com/velocirraptor5/React-course#readme",
   "dependencies": {
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "serve": "^14.1.2"
   },
   "description": "",
   "alias": {
